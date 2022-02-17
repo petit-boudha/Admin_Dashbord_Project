@@ -15,48 +15,52 @@
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="#">BOOTCAMP MEAN BOOTSTRAP ACTIVITY</a>
-        <!-- Sidebar Toggle-->
-        <!-- <button
-        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
-        id="sidebarToggle"
-        href="#!">
-        <i class="fas fa-bars"></i>
-      </button> -->
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
-                    aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </form>
-        <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Settings</a></li>
-                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                    <li>
+    <nav class="sb-topnav navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+               <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="#">BOOTCAMP MEAN BOOTSTRAP ACTIVITY</a>
+    
+            <!-- Sidebar Toggle-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0 ">
+               <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
+                     aria-describedby="btnNavbarSearch" />
+                  <button class="btn btn-primary" id="btnNavbarSearch" type="button">
+                     <i class="fas fa-search"></i>
+                  </button>
+               </div>
+            </form>
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                     data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#!">Settings</a></li>
+                     <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                     <li>
                         <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
-                </ul>
-            </li>
-        </ul>
+                     </li>
+                     <li><a class="dropdown-item" href="#!">Logout</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+        
+        </div>
     </nav>
     <div id="layoutSidenav">
+        <!-- navbar sidebar -->
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <div class="sb-sidenav-menu-heading">Menu</div>
                         <a class="nav-link" href="#">
                             <div class="sb-nav-link-icon">
                                 <i class="fas fa-tachometer-alt"></i>
@@ -102,8 +106,10 @@
                 </div>
             </nav>
         </div>
+
         <div id="layoutSidenav_content">
             <main>
+                  <!-- Cards list-->
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">Dashboard</h1>
                     <div class="row">
@@ -164,12 +170,14 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Bar Chart Example-->
                     <div class="row">
                         <div class="col-xl-6">
                             <div class="card mb-4">
                                 <div class="card-header">
-                                    <i class="fas fa-chart-area me-1"></i>
-                                    Area Chart Example
+                                    <i class="fas fa-chart-bar me-1"></i>
+                                    Bar Chart Example
                                 </div>
                                 <div class="card-body">
                                     <canvas id="myAreaChart" width="100%" height="40"></canvas>
@@ -188,6 +196,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- DataTable Example-->
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
@@ -600,78 +610,6 @@
                                         <td>2010/01/04</td>
                                         <td>$125,250</td>
                                     </tr>
-                                    <tr>
-                                        <td>Zorita Serrano</td>
-                                        <td>Software Engineer</td>
-                                        <td>San Francisco</td>
-                                        <td>56</td>
-                                        <td>2012/06/01</td>
-                                        <td>$115,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jennifer Acosta</td>
-                                        <td>Junior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>43</td>
-                                        <td>2013/02/01</td>
-                                        <td>$75,650</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cara Stevens</td>
-                                        <td>Sales Assistant</td>
-                                        <td>New York</td>
-                                        <td>46</td>
-                                        <td>2011/12/06</td>
-                                        <td>$145,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hermione Butler</td>
-                                        <td>Regional Director</td>
-                                        <td>London</td>
-                                        <td>47</td>
-                                        <td>2011/03/21</td>
-                                        <td>$356,250</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lael Greer</td>
-                                        <td>Systems Administrator</td>
-                                        <td>London</td>
-                                        <td>21</td>
-                                        <td>2009/02/27</td>
-                                        <td>$103,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jonas Alexander</td>
-                                        <td>Developer</td>
-                                        <td>San Francisco</td>
-                                        <td>30</td>
-                                        <td>2010/07/14</td>
-                                        <td>$86,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Shad Decker</td>
-                                        <td>Regional Director</td>
-                                        <td>Edinburgh</td>
-                                        <td>51</td>
-                                        <td>2008/11/13</td>
-                                        <td>$183,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Michael Bruce</td>
-                                        <td>Javascript Developer</td>
-                                        <td>Singapore</td>
-                                        <td>29</td>
-                                        <td>2011/06/27</td>
-                                        <td>$183,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Donna Snider</td>
-                                        <td>Customer Support</td>
-                                        <td>New York</td>
-                                        <td>27</td>
-                                        <td>2011/01/25</td>
-                                        <td>$112,000</td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -682,12 +620,14 @@
         </div>
     </div>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
+    <script src="./node_modules/simple-datatables/dist/umd/simple-datatables.js"></script>
+    
+    <script src="js/chartJS/chart-area-demo.js"></script>
+    <script src="js/chartJS/chart-bar-demo.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
+    <script src="js/"></script>
 </body>
 
 </html>
